@@ -1,0 +1,17 @@
+main: me.plugin.kitpvp.main
+version: 0.01
+name: SgKits
+
+commands:
+    kitreload:
+        description: Reloadaa config tai plugin.
+    bal:
+        description: Katso kuinka paljon tokeneita/karmaa sinulla on!
+    balance:
+        description: Katso kuinka paljon tokeneita/karmaa sinulla on!
+    tokenit:
+        description: Katso kuinka paljon tokeneita sinulla on!
+    karmat:
+        description: Katso kuinka paljon karmaa sinulal on!
+    token:
+        description: Anna pelaajalle tokeneita!
