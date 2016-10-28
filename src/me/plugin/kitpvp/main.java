@@ -21,14 +21,6 @@ import net.md_5.bungee.api.ChatColor;
 
 public class main extends JavaPlugin{
 	
-	/*
-	 *
-	 *Hei
-	 *Toimiiko t‰‰?
-	 *Toivottavasti.
-	 *
-	 */
-	
 	public void onEnable(){
 		System.out.println("SgKits laitettu p‰‰lle!");
 		
