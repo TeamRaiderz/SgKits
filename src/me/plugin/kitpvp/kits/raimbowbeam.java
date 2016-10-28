@@ -10,33 +10,31 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 import me.plugin.kitpvp.main;
 
-public class raimbowbeam implements Listener{
-	
+public class raimbowbeam implements Listener {
+
 	main main;
-	public raimbowbeam(main main){
+
+	public raimbowbeam(main main) {
 		this.main = main;
 	}
-	
+
 	@EventHandler
-	public void onInteract(PlayerInteractEvent e){
+	public void onInteract(PlayerInteractEvent e) {
 		Player p = e.getPlayer();
-		
-		if(p.getItemInHand().getItemMeta().getDisplayName().contains("§aSat§ceen§bkaa§eri")){
-			Projectile entity  = p.launchProjectile(org.bukkit.entity.Fireball.class);
+
+		if (p.getItemInHand().getItemMeta().getDisplayName().contains("§aSat§ceen§bkaa§eri")) {
+			Projectile entity = p.launchProjectile(org.bukkit.entity.Fireball.class);
 			entity.setShooter(e.getPlayer());
-			
-			
-			Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(main, new Runnable(){
+
+			Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(main, new Runnable() {
 
 				@Override
 				public void run() {
-					
+
 					entity.getWorld().playEffect(entity.getLocation(), Effect.POTION_SWIRL, 1);
-					
+
 				}
 			}, 20, 20);
-			
 		}
-  }
-	
+	}
 }

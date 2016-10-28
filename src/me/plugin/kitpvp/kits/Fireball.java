@@ -14,7 +14,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockIgniteEvent;
 import org.bukkit.event.block.BlockIgniteEvent.IgniteCause;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -29,9 +28,9 @@ public class Fireball implements Listener{
 	
 	public static HashMap<String, Double> cooldownTime = new HashMap<String, Double>();
     public static HashMap<String, BukkitRunnable> cooldownTask = new HashMap<String, BukkitRunnable>();
-    
-    private ArrayList<Player> shooter = new ArrayList<Player>();
-	
+
+	private ArrayList<Player> shooter = new ArrayList<Player>();
+
     main main;
 	public Fireball(main main) {
 		this.main = main;
