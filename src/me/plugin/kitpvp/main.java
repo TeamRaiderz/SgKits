@@ -19,7 +19,7 @@ import me.plugin.kitpvp.kits.raimbowbeam;
 import me.plugin.kitpvp.listeners.karmaEvent;
 import net.md_5.bungee.api.ChatColor;
 
-public class main extends JavaPlugin{
+public class Main extends JavaPlugin{
 	
 	public void onEnable(){
 		System.out.println("SgKits laitettu p‰‰lle!");
