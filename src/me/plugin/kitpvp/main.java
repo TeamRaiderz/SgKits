@@ -21,6 +21,8 @@ import net.md_5.bungee.api.ChatColor;
 
 public class main extends JavaPlugin{
 	
+	// JUUBES WASD HEREE OUU JEA 8=====3
+	
 	public void onEnable(){
 		System.out.println("SgKits laitettu p‰‰lle!");
 		
