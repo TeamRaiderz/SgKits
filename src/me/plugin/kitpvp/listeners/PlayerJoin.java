@@ -4,12 +4,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import me.plugin.kitpvp.main;
+import me.plugin.kitpvp.Main;
 
 public class PlayerJoin {
 	
-	main main;
-	public PlayerJoin(main main) {
+	Main main;
+	public PlayerJoin(Main main) {
 		this.main = main;
 	}
 	

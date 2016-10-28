@@ -20,7 +20,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 import me.plugin.kitpvp.PacketsUtils;
-import me.plugin.kitpvp.main;
+import me.plugin.kitpvp.Main;
 import net.minecraft.server.v1_8_R3.EnumParticle;
 import net.minecraft.server.v1_8_R3.PacketPlayOutWorldParticles;
 
@@ -31,8 +31,8 @@ public class Fireball implements Listener{
 
 	private ArrayList<Player> shooter = new ArrayList<Player>();
 
-    main main;
-	public Fireball(main main) {
+    Main main;
+	public Fireball(Main main) {
 		this.main = main;
 	}
 	

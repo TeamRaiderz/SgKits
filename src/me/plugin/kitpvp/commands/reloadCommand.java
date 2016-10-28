@@ -5,12 +5,12 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import me.plugin.kitpvp.main;
+import me.plugin.kitpvp.Main;
 
 public class reloadCommand implements CommandExecutor{
 
-	main main;
-	public reloadCommand(main instance) {
+	Main main;
+	public reloadCommand(Main instance) {
 		this.main = instance;
 	}
 	

@@ -8,13 +8,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import me.plugin.kitpvp.main;
+import me.plugin.kitpvp.Main;
 
 public class raimbowbeam implements Listener {
 
-	main main;
+	Main main;
 
-	public raimbowbeam(main main) {
+	public raimbowbeam(Main main) {
 		this.main = main;
 	}
 
@@ -27,12 +27,8 @@ public class raimbowbeam implements Listener {
 			entity.setShooter(e.getPlayer());
 
 			Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(main, new Runnable() {
-
-				@Override
 				public void run() {
-
 					entity.getWorld().playEffect(entity.getLocation(), Effect.POTION_SWIRL, 1);
-
 				}
 			}, 20, 20);
 		}

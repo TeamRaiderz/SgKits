@@ -16,12 +16,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import me.plugin.kitpvp.PacketsUtils;
-import me.plugin.kitpvp.main;
+import me.plugin.kitpvp.Main;
 
 public class Lightning implements Listener{
 	
-	main main;
-	public Lightning(main instance) {
+	Main main;
+	public Lightning(Main instance) {
 		this.main = instance;
 	}
 	

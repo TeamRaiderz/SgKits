@@ -11,8 +11,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 public class KarmaYML {
 	
-	static main main;
-	public KarmaYML(main instance){
+	static Main main;
+	public KarmaYML(Main instance){
 		main = instance;
 	}
 

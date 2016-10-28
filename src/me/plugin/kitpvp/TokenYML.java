@@ -11,8 +11,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 public class TokenYML {
 	
-	static main main;
-	public TokenYML(main instance){
+	static Main main;
+	public TokenYML(Main instance){
 		main = instance;
 	}
 
