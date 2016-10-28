@@ -7,7 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import me.plugin.kitpvp.TokenYML;
 
-public class tokenEvent implements Listener{
+public class TokenEvent implements Listener{
 
 	FileConfiguration config = TokenYML.getTokens();
 	

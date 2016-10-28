@@ -10,7 +10,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 import me.plugin.kitpvp.KarmaYML;
 
-public class karmaEvent implements Listener{
+public class KarmaEvent implements Listener{
 	
 	@EventHandler
 	public void onQuit(PlayerQuitEvent e){
