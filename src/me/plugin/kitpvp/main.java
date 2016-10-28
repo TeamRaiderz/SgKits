@@ -25,6 +25,7 @@ public class main extends JavaPlugin{
 	 *
 	 *Hei
 	 *Toimiiko t‰‰?
+	 *Toivottavasti.
 	 *
 	 */
 	
