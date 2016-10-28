@@ -10,12 +10,12 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 import me.plugin.kitpvp.Main;
 
-public class raimbowbeam implements Listener {
+public class RainbowBeam implements Listener {
 
-	Main main;
+	Main plugin;
 
-	public raimbowbeam(Main main) {
-		this.main = main;
+	public RainbowBeam(Main main) {
+		this.plugin = main;
 	}
 
 	@EventHandler
@@ -26,7 +26,7 @@ public class raimbowbeam implements Listener {
 			Projectile entity = p.launchProjectile(org.bukkit.entity.Fireball.class);
 			entity.setShooter(e.getPlayer());
 
-			Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(main, new Runnable() {
+			Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(plugin, new Runnable() {
 				public void run() {
 					entity.getWorld().playEffect(entity.getLocation(), Effect.POTION_SWIRL, 1);
 				}
