@@ -1,9 +1,6 @@
 package me.plugin.kitpvp.kits;
 
 import org.bukkit.Effect;
-import org.bukkit.EntityEffect;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Projectile;
 import org.bukkit.entity.Snowball;
@@ -11,11 +8,15 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.util.Vector;
 
 import me.plugin.kitpvp.Main;
 
 public class Rainbow implements Listener{
+	
+	Main main;
+	public Rainbow(Main main) {
+		this.main = main;
+	}
 	
 	@EventHandler
 	public void onInteract(PlayerInteractEvent e){
@@ -33,7 +34,7 @@ public class Rainbow implements Listener{
 					
 				}
 				
-			}.runTaskTimer(new Main(), 1, 1);
+			}.runTaskTimer(main, 1, 1);
 		}
 		
 	}

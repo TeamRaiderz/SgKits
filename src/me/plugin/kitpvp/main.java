@@ -30,7 +30,7 @@ public class Main extends JavaPlugin{
 		pm.registerEvents(new Lightning(this), this);
 		pm.registerEvents(new Fireball(this), this);
 		pm.registerEvents(new KarmaEvent(), this);
-		pm.registerEvents(new Rainbow(), this);
+		pm.registerEvents(new Rainbow(this), this);
 		
 		//REGISTERING THE COMMANDS
 		getCommand("kitreload").setExecutor(new reloadCommand(this));

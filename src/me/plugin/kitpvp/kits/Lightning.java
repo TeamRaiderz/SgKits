@@ -5,18 +5,16 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import me.plugin.kitpvp.PacketsUtils;
 import me.plugin.kitpvp.Main;
+import me.plugin.kitpvp.PacketsUtils;
 
 public class Lightning implements Listener{
 	
