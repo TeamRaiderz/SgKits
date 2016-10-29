@@ -15,7 +15,6 @@ import me.plugin.kitpvp.commands.SgCommand;
 import me.plugin.kitpvp.commands.reloadCommand;
 import me.plugin.kitpvp.kits.Fireball;
 import me.plugin.kitpvp.kits.Lightning;
-import me.plugin.kitpvp.kits.RainbowBeam;
 import me.plugin.kitpvp.listeners.KarmaEvent;
 import net.md_5.bungee.api.ChatColor;
 
@@ -30,7 +29,6 @@ public class Main extends JavaPlugin{
 		pm.registerEvents(new Lightning(this), this);
 		pm.registerEvents(new Fireball(this), this);
 		pm.registerEvents(new KarmaEvent(), this);
-		pm.registerEvents(new RainbowBeam(this), this);
 		
 		//REGISTERING THE COMMANDS
 		getCommand("kitreload").setExecutor(new reloadCommand(this));
